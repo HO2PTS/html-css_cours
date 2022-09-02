@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="POST">
+
+        <!--Première Partie: Nom et coordonnées-->
+        <h1>Coordonnées</h1>
+        <br>
+
+        <label for="nom"> Nom :</label>
+        <input type="text" id="nom" name="nom">
+
+        <label for="prenom"> Prenom :</label>
+        <input type="text" id="prenom" name="nom">
+
+        <br>
+        <br>
+
+        <!--Checkbox unique-->
+
+        <label for="documentation">Je souhaite recevoir une documentation :</label>
+        <input type="checkbox" id="documentation" name="documentation">
+
+        <br><br>
+
+        <!--Select-->
+
+        <label for="selectionpays"> <b> Veuillez choisir un pays</b></label>
+        <select name="selectionpays" id="selectionpays">
+            <option value="france">France</option>
+            <option value="USA">USA</option>
+            <option value="madagascar">Madagascar</option>
+            <option value="italie">Italie</option>
+            <option value="turquie">Turquie</option>
+        </select>
+
+        <br><br>
+
+        <!--Input radio-->
+
+        <a><b>Genre :</b></a>
+        <input type="radio" id="masculin" name="genre">
+        <label for="masculin">Masculin</label>
+
+        <input type="radio" id="feminin" name="genre">
+        <label for="feminin">Féminin</label>
+
+        <input type="radio" id="autre" name="genre">
+        <label for="autre">Autre</label>
+        <br><br>
+
+        <!--Langue parlée checkbox-->
+        <a> <b> Langue(s) parlée(s) :</b></a>
+        <input type="checkbox" id="français" name="langue">
+        <label for="français">Français</label>
+
+        <input type="checkbox" id="anglais" name="langue">
+        <label for="anglais">Anglais</label>
+
+        <input type="checkbox" id="chinois" name="langue">
+        <label for="langue">Chinois</label>
+        <br>
+        <br>
+
+        <!-- Textarea pour posez ces questions-->
+
+       <label for="question"> <b>Vous pouvez nous faire parvenir vos questions </b></label>
+       <br>
+       <textarea name="question" id="" cols="50" rows="5" placeholder="Posez-votre question ici"></textarea>
+        
+        <br>
+        <!--Bouton d'envoie et reset-->
+        <input type="submit">
+        <input type="reset" value="Effacer">
+
+    </form>
+</body>
+</html>

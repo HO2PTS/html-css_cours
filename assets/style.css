@@ -1,0 +1,19 @@
+/*Appliquer aux paragraphe*/
+/*séléctionne le nom de paragraphe*/
+/*vh => taille total de l'écran*/
+#paragraphe{
+    color:green;
+}
+#titre{
+    color: pink;
+}
+.rouge{
+    color: blue;
+}
+#titreColor{
+    font-family: fantasy, cursive, serif; /*Permet de changer la police d'écriture*/
+    font-size: 50px; /*Permet de changer la taille de la police*/
+    background-color: salmon;
+    height: none ; /*hauteur peut être exprimé en pourcentage et en px*/
+}
+/*Nous pouvons mettre plusieurs font-family*/

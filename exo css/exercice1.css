@@ -1,0 +1,29 @@
+header{
+    color: blue;
+    font-family: fantasy;
+}
+main{
+    color: red;
+    width: 70%;
+}
+footer{
+    background-color: grey;
+    height: 100px;
+}
+#titreVert{
+    color: green;
+}
+h3{
+    color: pink;
+}
+#secondArticle{
+    font-family: monospace;
+}
+#premierArtcile{
+    font-size: 8px;
+}
+h3:hover{
+    background-color: black;
+    color: white;
+} 
+/* pseudo class => quand on survole l'élement séléctionné avec la souris*/

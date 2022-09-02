@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+}
+header{
+    height: 10%;
+    background-color: #CC3E58;
+}
+header ul{
+    display: flex;
+    justify-content: space-around;
+}
+header ul li{
+    padding-top: 20px;
+}
+header ul li a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+main{
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    /*Apèrs avoir appliqué le display flex, nous pouvons appliquer des attribut justify-content: *** gère l'axe des x horizontale*/
+
+    /* attribut flex-direction pour changer l'ordre de ligne et de colonne (column celui là inverserat l'axe des x & y, row-reverse, row column-reverse(donner une hauteur au parent) */
+
+    /*align-items: flex-end/center/etc... (pour gérer l'axe des Y ou verticale)*/
+    height: 70%;
+    background-color: #D45E74
+}
+footer{
+    height: 20%;
+    background-color: #C1334D;
+    display: flex;
+    font-size: small;
+    justify-content: space-around;
+}
+li{
+    list-style: none;
+    text-align: center;
+}
+
+a{
+    font-size: 1.1em;
+    text-decoration: none;
+}
+p{
+    border: 2px solid #D45E74;
+    height: 30%;
+    width: 20%;
+    background-color: #E59EAB;
+    padding: 20px;
+    border-radius: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+div{
+    width: 30%;
+}
+.titleFooter{
+    margin: 20px;
+    text-decoration: underline;
+}
+.titleFooter a:hover{
+    color:white;
+}
+
+footer div ul li a {
+    color: white;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a:hover{
+    text-decoration:underline;
+    color: #f8788f;
+}
+p:hover{
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+    border: 2px solid white;
+}
+
+/*Display (Affichage) block*/
+
+/*Range en block, par défaut*/
+
+/* Responsive avec media condition */
+
+@media(max-width: 946px){
+    body{
+        height: auto;
+    }
+    header{
+        padding-bottom: 20px;
+        margin: 0;
+    }
+    ul{
+        justify-content: row-reverse;
+        padding-left: 0;
+    }
+    main{
+        flex-direction: column;
+    }
+    p{
+        width: 40%;
+        height:30%;
+        margin: 20px 0;
+    }
+    footer{
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .titleFooter{
+        margin: 0;
+    }
+    footer div ul li {
+        padding: 3px;
+    }
+    .titleFooter a:hover{
+        color: white;
+    }
+    div{
+        width: 60%;
+        margin: 20px 0px;
+    }
+    
+}

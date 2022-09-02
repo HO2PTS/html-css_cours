@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+
+    <form action="" method="POST">
+
+        <label for="name"></label>
+        <input type="text" id="name" placeholder="Texte...">
+
+        <br>
+        <br>
+
+        <label for="age"></label>
+        <input type="number" id="age" placeholder="12345">
+
+        <br>
+        <br>
+
+        <label for="mdp"></label>
+        <input type="password" id="mdp" placeholder="****">
+
+        <br>
+        <br>
+
+        <label for="mail"></label>
+        <input type="email" id="mail" placeholder="test@mail.fr">
+
+        <br>
+        <br>
+
+        <label for="maj">Accpetez vous les maj ?</label>
+        <input type="checkbox" id="maj">
+
+        <br>
+        <br>
+
+        <p>Quel est votre fruit préféré ?</p>
+        <!--attribut for="" et id="" doivent être pareil-->
+
+        <!--Checkbox plusieurs choix multpiles-->
+        <input type="checkbox" id="banane" name="fruit">
+        <label for="banane">Banane</label>
+
+        <input type="checkbox" id="fraise" name="fruit">
+        <label for="fraise">Fraise</label>
+
+        <input type="checkbox" id="pomme" name="fruit">
+        <label for="pomme">Pomme</label>
+
+        <br>
+        <br>
+
+        <!-- type radio UN SEUL CHOIX POSSIBLE-->
+        <input type="radio" id="Banane" name="fruit">
+        <label for="Banane">Banane</label>
+
+        <input type="radio" id="Fraise" name="fruit">
+        <label for="Fraise">Fraise</label>
+
+        <input type="radio" id="Pomme" name="fruit">
+        <label for="Pomme">Pomme</label>
+
+        <br>
+        <br>
+
+        <!-- Textarea -->
+        <label for="temoignage">Votre témoignage :</label>
+        <br>
+        <textarea name="temoignage" id="temoignage" cols="20" rows="10" placeholder="Ecrivez-ici..."></textarea>
+        <br>
+        <br>
+        <!--Select-->
+
+        <label for="selectionfruit">Choisissez votre fruit</label>
+        <select name="selectionfruit" id="selectionfruit">
+            <option value="banane">Banane</option>
+            <option value="fraise">Fraise</option>
+            <option value="pomme">Pomme</option>
+            <option value="orange">Orange</option>
+            <option value="kiwi">Kiwi</option>
+        </select>
+        <br>
+        <br>
+
+        <input type="submit">
+        <input type="reset" value="Effacer">
+
+    </form>
+    
+</body>
+</html>
